@@ -111,7 +111,7 @@ def build_qa_model(llm):
     )
     return RetrievalQA.from_chain_type(
         llm=llm,
-        chain_type="stuff", 
+        chain_type="stuff",
         retriever=retriever,
         return_source_documents=True,
         verbose=True
